@@ -12,11 +12,25 @@ import Urgentpriority from '../../Assets/icons/SVG - Urgent Priority colour.svg'
 import Add from '../../Assets/icons/add.svg'
 import Threedot from '../../Assets/icons/3 dot menu.svg'
 import './List.css'
+import '../Card/Card.css'
 import Card from '../Card/Card'
 
 let cardCount = 0;
 
 export default function List(props) {
+
+    const filteredTickets = props.ticketDetails.filter(ticket => 
+        ticket.status === props.listTitle || 
+        ticket.priority === props.listTitle || 
+        ticket.userObj.name === props.listTitle
+    );
+    
+    cardCount = filteredTickets.length;
+    
+    filteredTickets.map(ticket => (
+        <Card cardDetails={ticket} group={props.groupValue} />
+    ));
+
 
     console.log(props);
 
@@ -65,30 +79,35 @@ export default function List(props) {
                                     {
                                         {
                                             'Anoop sharma':
-                                                <div className="card-profile2" style={{ backgroundColor: bgColor }}>
-                                                    <div className="card-profile-initial">AS</div>
-                                                    <div className="card-profile-initial-available"></div>
-                                                </div>,
+                                                <div className='card-pfp-wrapper'>
+                                                    <div className="card-profile" style={{ backgroundColor: bgColor }}>
+                                                        <div className="card-profile-initial">AS</div>
+                                                        <div className="card-profile-initial-available"></div>
+                                                    </div></div>,
                                             'Yogesh':
-                                                <div className="card-profile2" style={{ backgroundColor: bgColor }}>
-                                                    <div className="card-profile-initial">YO</div>
-                                                    <div className="card-profile-initial-available card-profile-initial-available-true"></div>
-                                                </div>,
+                                                <div className='card-pfp-wrapper'>
+                                                    <div className="card-profile" style={{ backgroundColor: bgColor }}>
+                                                        <div className="card-profile-initial">YO</div>
+                                                        <div className="card-profile-initial-available card-profile-initial-available-true"></div>
+                                                    </div></div>,
                                             'Shankar Kumar':
-                                                <div className="card-profile2" style={{ backgroundColor: bgColor }}>
-                                                    <div className="card-profile-initial">SK</div>
-                                                    <div className="card-profile-initial-available card-profile-initial-available-true"></div>
-                                                </div>,
+                                                <div className='card-pfp-wrapper'>
+                                                    <div className="card-profile" style={{ backgroundColor: bgColor }}>
+                                                        <div className="card-profile-initial">SK</div>
+                                                        <div className="card-profile-initial-available card-profile-initial-available-true"></div>
+                                                    </div></div>,
                                             'Ramesh':
-                                                <div className="card-profile2" style={{ backgroundColor: bgColor }}>
-                                                    <div className="card-profile-initial">RA</div>
-                                                    <div className="card-profile-initial-available card-profile-initial-available-true"></div>
-                                                </div>,
+                                                <div className='card-pfp-wrapper'>
+                                                    <div className="card-profile" style={{ backgroundColor: bgColor }}>
+                                                        <div className="card-profile-initial">RA</div>
+                                                        <div className="card-profile-initial-available card-profile-initial-available-true"></div>
+                                                    </div></div>,
                                             'Suresh':
-                                                <div className="card-profile2" style={{ backgroundColor: bgColor }}>
-                                                    <div className="card-profile-initial">SU</div>
-                                                    <div className="card-profile-initial-available card-profile-initial-available-true"></div>
-                                                </div>,
+                                                <div className='card-pfp-wrapper'>
+                                                    <div className="card-profile" style={{ backgroundColor: bgColor }}>
+                                                        <div className="card-profile-initial">SU</div>
+                                                        <div className="card-profile-initial-available card-profile-initial-available-true"></div>
+                                                    </div></div>,
                                         }[props.listTitle]
                                     }
                                 </>,

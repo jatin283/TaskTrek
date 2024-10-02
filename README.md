@@ -2,7 +2,7 @@ Here’s the updated **README** with your GitHub username:
 
 ---
 
-# [TaskTrek]()
+# [TaskTrek](https://task-trek-ten.vercel.app/)
 
 TaskTrek is a dynamic and intuitive Kanban board application built using React JS. It allows users to organize and manage tasks efficiently by grouping and sorting tickets based on status, user, or priority. The application is designed to enhance productivity and ensure that tasks are prioritized effectively. It also retains the user's preferences, so they can resume their workflow seamlessly even after a page reload.
 
@@ -21,7 +21,7 @@ TaskTrek is a dynamic and intuitive Kanban board application built using React J
 
 ## Demo
 
-You can see a live demo of TaskTrek [here]().
+You can see a live demo of TaskTrek [here](https://task-trek-ten.vercel.app/).
 
 ## Installation
 
@@ -30,7 +30,7 @@ To run the TaskTrek Kanban board application locally, follow these steps:
 1. Clone the repository:
     
     ```bash
-    git clone https://github.com/jatin283/TaskTrek.git
+    git clone https://github.com/jatin283/TaskTrek
     ```
 
 2. Navigate to the project directory:
