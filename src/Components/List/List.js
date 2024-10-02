@@ -80,31 +80,31 @@ export default function List(props) {
                                         {
                                             'Anoop sharma':
                                                 <div className='card-pfp-wrapper'>
-                                                    <div className="card-profile" style={{ backgroundColor: bgColor }}>
+                                                    <div className="card-profile2" style={{ backgroundColor: bgColor }}>
                                                         <div className="card-profile-initial">AS</div>
                                                         <div className="card-profile-initial-available"></div>
                                                     </div></div>,
                                             'Yogesh':
                                                 <div className='card-pfp-wrapper'>
-                                                    <div className="card-profile" style={{ backgroundColor: bgColor }}>
+                                                    <div className="card-profile2" style={{ backgroundColor: bgColor }}>
                                                         <div className="card-profile-initial">YO</div>
                                                         <div className="card-profile-initial-available card-profile-initial-available-true"></div>
                                                     </div></div>,
                                             'Shankar Kumar':
                                                 <div className='card-pfp-wrapper'>
-                                                    <div className="card-profile" style={{ backgroundColor: bgColor }}>
+                                                    <div className="card-profile2" style={{ backgroundColor: bgColor }}>
                                                         <div className="card-profile-initial">SK</div>
                                                         <div className="card-profile-initial-available card-profile-initial-available-true"></div>
                                                     </div></div>,
                                             'Ramesh':
                                                 <div className='card-pfp-wrapper'>
-                                                    <div className="card-profile" style={{ backgroundColor: bgColor }}>
+                                                    <div className="card-profile2" style={{ backgroundColor: bgColor }}>
                                                         <div className="card-profile-initial">RA</div>
                                                         <div className="card-profile-initial-available card-profile-initial-available-true"></div>
                                                     </div></div>,
                                             'Suresh':
                                                 <div className='card-pfp-wrapper'>
-                                                    <div className="card-profile" style={{ backgroundColor: bgColor }}>
+                                                    <div className="card-profile2" style={{ backgroundColor: bgColor }}>
                                                         <div className="card-profile-initial">SU</div>
                                                         <div className="card-profile-initial-available card-profile-initial-available-true"></div>
                                                     </div></div>,
